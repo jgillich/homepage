@@ -1,0 +1,35 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.6.2",
+    "apollo-client": "^2.6.3",
+    "apollo-link-http": "^1.5.15",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
+    "grommet": "^2.7.3",
+    "grommet-icons": "^4.2.0",
+    "grommet-theme-hp": "^0.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^9.0.0",
+    "prism-react-renderer": "^0.1.7",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.6",
+    "sanitize.css": "^10.0.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-macros": "^2.6.1",
+    "eslint": "^6.0.1",
+    "eslint-plugin-github": "^3.0.0",
+    "raw-loader": "^3.0.0"
+  }
+}

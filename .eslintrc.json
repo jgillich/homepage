@@ -1,0 +1,8 @@
+{
+  "extends": ["plugin:github/es6", "plugin:github/app", "plugin:github/react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
