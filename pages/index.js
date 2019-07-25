@@ -85,7 +85,7 @@ const Index = () => (
           </Text>
         </Box>
         <Box direction="row" gap="small" height="medium">
-          <Box basis="3/4" border pad="xsmall">
+          <Box basis="3/4">
             <Image width="100%" fit="contain" src="/static/RocketGraph.png" />
           </Box>
           <Box basis="1/4">
@@ -100,8 +100,8 @@ const Index = () => (
           </Box>
         </Box>
         <Box direction="row" gap="small" height="medium">
-          <Box border basis="3/4" pad="xsmall">
-            <Image width="100%" fit="contain" src="/static/Blockforge.jpg" />
+          <Box basis="3/4">
+            <Image width="100%" fit="contain" src="/static/Blockforge.png" />
           </Box>
           <Box basis="1/4">
             <Heading level={3} margin="none">
@@ -109,16 +109,14 @@ const Index = () => (
             </Heading>
             <Paragraph>
               BlockForge was a cross-platform cryptocurrency miner with a graphical user interface based on web
-              technologies. The mining backend was written from scratch in Go, utilizing third-party C code for the core
-              PoW algorithms.
+              technologies. The mining backend was written from scratch in Go.
             </Paragraph>
             <Button icon={<Link />} label="Source Code" href="https://gitlab.com/blockforge/blockforge" />
           </Box>
         </Box>
         <Box direction="row" gap="small" height="medium">
-          <Box basis="3/4" border pad="xsmall" direction="row">
-            <Image fit="contain" src="/static/Greenguide1.jpg" />
-            <Image fit="contain" src="/static/Greenguide2.jpg" />
+          <Box basis="3/4" direction="row">
+            <Image fit="contain" src="/static/Greenguide2.png" />
           </Box>
           <Box basis="1/4">
             <Heading level={3} margin="none">
