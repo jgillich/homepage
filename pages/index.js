@@ -33,14 +33,17 @@ const Index = () => (
   <DefaultLayout>
     <Grid columns={['large']} gap="large" justifyContent="center">
       <Box>
+        {/*
         <Box height="xsmall" width="xsmall" margin="xsmall" alignSelf="center">
           <Image fit="cover" src="https://i.pravatar.cc/300" />
         </Box>
+        */}
         <Heading level={1} margin="xsmall" alignSelf="center">
           Jakob Gillich
         </Heading>
         <Paragraph alignSelf="center" textAlign="center">
-          Full stack web developer based in Germany. I love crafting great user experiences and I'm a passionate runner.
+          I am a full stack web developer based in Germany. I love crafting great user experiences and I'm a passionate
+          runner.
         </Paragraph>
         <Box direction="row" justify="center">
           <Button
