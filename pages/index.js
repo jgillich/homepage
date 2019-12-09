@@ -20,7 +20,7 @@ const SkillMeter = ({name, value}) => (
       />
       <Box align="center">
         <Box direction="row" align="center" pad={{bottom: 'xsmall'}}>
-          <Text size="medium" wordBreak="normal">
+          <Text size="normal" wordBreak="normal">
             {name}
           </Text>
         </Box>
@@ -72,9 +72,10 @@ const Index = () => (
           <SkillMeter name="JavaScript" value={100} />
           <SkillMeter name="React" value={100} />
           <SkillMeter name="Node.js" value={100} />
-          <SkillMeter name="Linux" value={100} />
           <SkillMeter name="Go" value={75} />
+          <SkillMeter name="GraphQL" value={75} />
           <SkillMeter name="Rust" value={50} />
+          <SkillMeter name="K8s" value={50} />
         </Box>
       </Box>
       <Box gap="large">

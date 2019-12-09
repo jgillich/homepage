@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react'
 import {Grid, Box, Heading} from 'grommet'
 import gql from 'graphql-tag'
 import Error from 'next/error'
+import Head from 'next/head'
 import DefaultLayout from '../../layouts'
 import {client} from '../../lib/graphcms'
 import Post from '../../components/Post'
@@ -37,6 +38,9 @@ export default class SinglePost extends PureComponent {
 
     return (
       <DefaultLayout>
+        <Head>
+          <title>{title} | Jakob Gillich</title>
+        </Head>
         <Grid columns={['large']} gap="large" justifyContent="center">
           <Box>
             <Heading level="2" margin="none">
