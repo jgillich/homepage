@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Everbase",
+    "image": "/static/portfolio/everbase.png",
+    "description": "A GraphQL API service that makes developers more productive.",
+    "tags": [
+      "React",
+      "Next.js",
+      "Crystal",
+      "Wikidata",
+      "Redis"
+    ],
+    "url": "https://www.everbase.co/"
+  },
+  {
+    "name": "GraphQL for Crystal",
+    "image": "/static/portfolio/graphql-crystal.svg",
+    "description": "A open source GraphQL implementation in the Crystal programming language.",
+    "tags": [
+      "GraphQL",
+      "Crystal"
+    ],
+    "github": "https://github.com/graphql-crystal/graphql"
+  },
+  {
+    "name": "HartShuttleBot",
+    "image": "/static/portfolio/hartshuttlebot.png",
+    "description": "A open source Discord bot facilitating play sessions for the PSForever game server emulator project.",
+    "tags": [
+      "Node.js",
+      "Discord.js"
+    ],
+    "github": "https://github.com/psforever/HartShuttleBot"
+  },
+  {
+    "name": "BlockForge",
+    "image": "/static/portfolio/blockforge.jpg",
+    "description": "A open source, cross platform, easy to use cryptocurrency mining application.",
+    "tags": [
+      "Go",
+      "C",
+      "Riot.js"
+    ],
+    "gitlab": "https://gitlab.com/blockforge/blockforge"
+  }
+]

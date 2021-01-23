@@ -1,5 +1,6 @@
-const github = require('eslint-plugin-github/prettier.config')
+const github = require('@github/prettier-config')
 
 module.exports = {
-  ...github
+  ...github,
+  trailingComma: 'es5',
 }

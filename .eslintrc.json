@@ -1,8 +1,3 @@
 {
-  "extends": ["plugin:github/es6", "plugin:github/app", "plugin:github/react"],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  }
+  "extends": ["plugin:github/recommended", "plugin:github/app"]
 }

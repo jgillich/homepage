@@ -1,34 +1,33 @@
+import 'highlight.js/styles/github.css'
 import React, {Fragment} from 'react'
-import App from 'next/app'
-import {Grommet} from 'grommet'
-import {hp} from 'grommet-theme-hp'
-import sanitize from 'raw-loader!sanitize.css/sanitize.css'
-import {createGlobalStyle} from 'styled-components'
 import {ApolloProvider} from 'react-apollo'
-import {deepMerge} from 'grommet/utils'
 import {client} from '../lib/graphcms'
+import {ChakraProvider, CSSReset, ColorModeProvider} from '@chakra-ui/react'
+import Head from 'next/head'
+import {theme} from '../components/theme'
+import useRouterScroll from '../components/use-router-scroll'
 
-const Sanitize = createGlobalStyle`${sanitize}`
+export default function App({Component, pageProps}) {
+  useRouterScroll()
 
-const theme = deepMerge(hp, {})
-
-export default class _App extends App {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    const {Component, pageProps} = this.props
-
-    return (
-      <Fragment>
-        <Sanitize />
-        <Grommet theme={theme}>
-          <ApolloProvider client={client}>
+  return (
+    <Fragment>
+      <Head>
+        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+      <ChakraProvider theme={theme}>
+        <CSSReset />
+        <ApolloProvider client={client}>
+          <ColorModeProvider
+            options={{
+              useSystsemColorMode: true,
+            }}
+          >
             <Component {...pageProps} />
-          </ApolloProvider>
-        </Grommet>
-      </Fragment>
-    )
-  }
+          </ColorModeProvider>
+        </ApolloProvider>
+      </ChakraProvider>
+    </Fragment>
+  )
 }
